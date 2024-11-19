@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign Up</title>
+        <link rel="stylesheet" href="SignUpPage.css">
+    </head>
+    <body>
+        <div class="Container">
+            <!-- Only one form now with action to /signup -->
+            <form action="/signup" method="post"> <!-- Removed nested form -->
+                <h2>Sign Up</h2>
+                <div class="content">
+                     <div class="input-box">
+                        <label for="email">UNT Email:</label>
+                        <input type="text" placeholder="Enter your UNT Email" name="email" required>
+                     </div>
+                     <div class="input-box">
+                        <label for="euid">UNT EUID:</label>
+                        <input type="text" placeholder="Enter your UNT EUID" name="euid" required>
+                     </div>
+                     <div class="input-box">
+                        <label for="password">Password:</label>
+                        <input type="password" placeholder="Enter your Password" name="password" required>
+                     </div>
+                     <div class="input-box">
+                        <label for="confirmPassword">Confirm Password:</label> <!-- Changed name to confirmPassword -->
+                        <input type="password" placeholder="Re-Enter your Password" name="confirmPassword" required>
+                     </div>
+                     <div class="alert">
+                        <label>
+                            <input type="checkbox" required> By clicking Sign Up, you agree to our <a href="#">Terms</a>, <a href="#">Privacy Policy</a>, and <a href="#">Cookies Policy</a>.
+                        </label>
+                     </div>
+                     <!-- Removed the inner form and kept only the submit button here -->
+                     <input type="submit" name="submit" value="Sign Up" class="submit">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

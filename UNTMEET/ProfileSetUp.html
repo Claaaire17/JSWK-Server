@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Profile Setup - Step 2</title>
+        <link rel="stylesheet" href="ProfileSetUp.css">
+    </head>
+    <body>
+        <div class="Container">
+            <form action="submitProfile" method="post">
+                <h2>Set Up Your Profile</h2>
+                <div class="content">
+                     <div class="input-box">
+                        <label for="firstName">First Name:</label>
+                        <input type="text" placeholder="Enter First Name" name="firstName" required>
+                     </div>
+                     <div class="input-box">
+                        <label for="lastName">Last Name:</label>
+                        <input type="text" placeholder="Enter Last Name" name="lastName" required>
+                     </div>
+                     <div class="input-box">
+                        <label for="preferredName">Preferred Name:</label>
+                        <input type="text" placeholder="Enter Preferred Name:" name="preferredName" required>
+                     </div>
+                     <div class="input-box">
+                        <label for="major">Major:</label>
+                        <input type="text" placeholder="Enter Your Major" name="major" required>
+                     </div>
+                     <div class="input-box">
+                        <label for="minor">Minor:</label>
+                        <input type="text" placeholder="Enter Your Minor" name="minor">
+                     </div>
+                     <div class="input-box">
+                        <label for="classification">Classification:</label>
+                        <select id="classification" name="classification" required>
+                            <option value="" disabled selected>Select Your Classification</option>
+                            <option value="freshman">Freshman</option>
+                            <option value="sophomore">Sophomore</option>
+                            <option value="junior">Junior</option>
+                            <option value="senior">Senior</option>
+                            <option value="graduate">Graduate</option>
+                            <option value="alumni">Alumni</option>
+                        </select>
+                     </div>
+                     <div class="input-box">
+                        <label for="gender">Gender Identity:</label>
+                        <select id="gender" name="gender" required>
+                            <option value="" disabled selected>Select Your Gender Identity</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="non-binary">Non-Binary</option>
+                            <option value="other">Prefer Not to Say</option>
+                        </select>
+                     </div>
+                     <div class="input-box">
+                        <label for="pronouns">Pronouns:</label>
+                        <select id="pronouns" name="pronouns" required>
+                            <option value="" disabled selected>Select Your Preferred Pronouns</option>
+                            <option value="He/Him">He/Him</option>
+                            <option value="She/Her">She/Her</option>
+                            <option value="They/Them">They/Them</option>
+                        </select>
+                     </div>
+                     <div class="input-box">
+                        <label for="city">City:</label>
+                        <input type="text" placeholder="Enter Your City" name="city" required>
+                     </div>
+                     <div class="input-box">
+                        <label for="state">State:</label>
+                        <input type="text" placeholder="Enter Your State" name="state" required>
+                     </div>
+                     <div class="input-box">
+                        <label for="clubs">Clubs/Student Organizations:</label>
+                        <select id="clubs" name="clubs" required>
+                            <option value="" disabled selected>Select A Club/Student Organization</option>
+                        </select>
+                     </div>
+                     <div class="input-box">
+                        <label for="profilePicture">Upload Profile Picture:</label>
+                        <input type="file" name="profilePicture" accept="image/*">
+                     </div>
+                     <input type="submit" name="submit" value="Complete Sign-Up" class="submit">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
